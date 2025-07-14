@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* 1. VARIABLES DE DISEÑO */
+:root {
+  --primary-color: #47b2e4;
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --font-family-base: 'Londrina Solid', sans-serif;
+}
+
+/* 2. ESTILOS GENERALES */
+body {
+  font-family: var(--font-family-base);
+  color: #212529;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* 3. NAVBAR */
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 15px 0;
+}
+
+.navbar.scrolled {
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: var(--dark-color);
+}
+
+.nav-link {
+  color: var(--dark-color);
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* 4. HERO */
+.row.p-5 {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.bgHero {
+  background: url(img/fondos-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Botones */
+.btn {
+  border-radius: 56px;
+  padding: -2px 53px;
+  font-weight: 481;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-dark {
+  background-color: #F2B008;
+  border: none;
+  font-size: 15px
+}
+
+.btnTypo {
+  font-family: 'Jost', sans-serif;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: #c48d00;
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-dark:hover {
+  background-color: #c48d00;
+  color: #fff;
+}
+
+.btnCardColor{
+  background-color: #F2B008;
+  border: none
+}
+
+.btnCardColor:hover {
+  background-color: #c48d00
+}
+
+/* 5. SECCIONES */
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 20px auto 0;
+}
+
+/* 6. CARDS */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.cardColor{
+  background-color: #FF5111;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.masonry__container {
+  column-count: 4;
+  column-gap: 1rem;
+}
+
+.masonry__item {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.card-text {
+  color: #ffffff;
+}
+
+/* 7. TESTIMONIOS */
+.blockquote {
+  background-color: var(--light-color);
+  border-left: 4px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* 8. FORMULARIO */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+form button.btn-primary {
+  background-color: #c48d00;
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+/* 9. FOOTER */
+footer {
+  background-color: var(--dark-color);
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* 10. IMÁGENES */
+img.rounded-circle {
+  border: 5px solid var(--light-color);
+}
+
+/* 11. GALERÍA */
+.container .row img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.no-hover,
+.no-hover:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* TITULOS */
+.h1-custom {
+  font-size: 3rem;
+  font-weight: 434;
+  line-height: 1.2;
+  color: #FF5111;
+}
+
+.h2-custom {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #FF5111;
+}
+
+.h2-custom-white {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: white;
+}
+
+.h3-custom {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--dark-color);
+}
+
+.h4-custom {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+}
+
+/* PÁRRAFOS Y TEXTOS */
+.p-custom {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.pLectura {
+  font-family: "Jost", sans-serif;
+  color: black;
+  font-size: 1rem;
+}
+
+.pLecturaCard {
+  font-family: "Jost", sans-serif;
+  color: white;
+  font-size: 1rem;
+  text-align-last: center;
+}
+
+.pLecturaPlan {
+  font-family: "Jost", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+.pText {
+  font-family: "Jost", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.lead-custom {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+/* FONDOS E IMÁGENES */
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay-light {
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+}
+
+.bg-overlay-dark {
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  color: #fff;
+}
+
+.bgPequePlan {
+  background: url(img/fondos-05.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.bgCards {
+  background: url(img/fondos-05.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bgDesc {
+  background: url(img/fondos-07.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bgMarcas {
+  background: url(img/fondos-08.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bgTestimonios {
+  background: url(img/fondos-09.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.bgSuscribirse {
+  background: url(img/fondos-10.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+}
+
+.bgContacto {
+   background: url(img/fondos-11.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+}
+
+.img-rounded {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.seccion-sobre-nosotros {
+  background-image: url(img/fondos-02.jpg); 
+  background-size: cover;         
+  background-position: center;     
+  background-repeat: no-repeat;
+  color: #fff;                     
+  padding: 60px 0;                
+}
+
+/* SECCION ICONOS*/
+.section-beneficios {
+  position: relative;
+  background-image: url(img/fondos-04.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;               
+  padding: 60px 0;
+}
+
+.color-iconos {
+  color: #FF5111;
+}
+
+.section-beneficios .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* capa oscura */
+  z-index: 1;
+}
+
+.section-beneficios .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.rounded-container {
+  background-color: #FF94CC;
+  border-radius: 1rem;
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.39);
+  mix-blend-mode: multiply;
+}
+
+/* TEXTOS ADICIONALES */
+.text-uppercase-custom {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-muted-custom {
+  color: #6c757d;
+}
+
+/* ESPACIADOS */
+.section-spacing {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-spacing-sm {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* ============================== */
+/* MEDIA QUERIES */
+/* ============================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .masonry__container {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masonry__container {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .masonry__container {
+    column-count: 1;
+  }
+}
