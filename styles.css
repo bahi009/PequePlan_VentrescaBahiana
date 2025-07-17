@@ -463,7 +463,14 @@ img.rounded-circle {
   background: url(img/fondos-08.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+}
+
+.bgPago {
+  background: url(img/FONDO-DET-29.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
 }
 
 .bgTestimonios {
@@ -496,6 +503,16 @@ img.rounded-circle {
 
 .bgContacto {
    background: url(img/fondos-11.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 918px;
+  display: flex;
+  
+}
+
+.bgContactoDet {
+   background: url(img/FONDO-DET-30.jpg);
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
@@ -754,6 +771,12 @@ img.rounded-circle {
 
 @media (max-width: 768px) {
   .bgMarcas {
+    background: url('img/fondos-05.jpg') center/cover no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .bgPago {
     background: url('img/fondos-05.jpg') center/cover no-repeat;
   }
 }
