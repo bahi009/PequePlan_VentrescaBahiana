@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/peque-04.png" type="image/png">  
+  <title>Kit PequeArtísticos - PEQUEPLAN</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo como imagen -->
+    <a class="navbar-brand" href="home.html">
+      <img src="img/marca.png" alt="Logo" height="40">
+    </a>
+
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#productos">Qué trae</a></li>
+        <li class="nav-item"><a class="nav-link" href="#opiniones">Opiniones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section class="section-spacing bgHeroDet d-flex align-items-center justify-content-between" style="min-height: 100vh; padding-top: 100px;">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Texto principal -->
+      <div class="col-12 col-lg-5">
+        <h1 class="h1-custom-det" style="max-width: 500px;">
+          ¡A CREAR Y COLOREAR, CON PEQUEARTÍSTICOS!
+        </h1>
+        <p class="pBajadaB">
+          Para que los peques suelten su creatividad: dibujar, pintar, colorear y crear títeres de papel... ¡Todo en una sola caja!
+        </p>
+        <div class="d-flex gap-3 mt-4">
+          <a href="#" class="btn btn-dark btnTypo">¡LO QUIERO!</a>
+        </div>
+      </div>
+      <!-- Imagen destacada -->
+      <div class="col-12 col-lg-7 text-center">
+        <img src="img/IMG-HERODET.png" class="img-fluid img-rounded no-hover" alt="Imagen Hero" style="max-width: 90%; margin-left: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+<!-- ABOUT: Sección frase -->
+<section class="section-spacing text-center seccion-frase">
+  <div class="container">
+    <h2 class="h2-custom-white">No hace falta ser artista para empezar<br>¡Solo querer jugar!</h2>
+  </div>
+</section>
+<!-- /ABOUT -->
+
+<!-- SERVICES: Servicios o funcionalidades -->
+<section id="productos" class="section-spacing bgProd text-center">
+  <div class="container">
+  <h2 class="h2-custom">¡Materiales nuevos todos los meses!</h2>
+  <div class="row">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card cardColorP no-hover h-100 p-4">
+        <img src="img/IMG-PRODUC-35.png" class="mb-3 no-hover" alt="Servicio">
+        <h5 class="h5-custom">Temperas, acuarelas<br>y plasticolas</h5>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card cardColorP no-hover h-100 p-4">
+        <img src="img/IMG-PRODUC-34.png" class="mb-3 no-hover" alt="Servicio">
+        <h5 class="h5-custom">Reglas, sacapuntas,<br>goma y tijera</h5>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card cardColorP no-hover h-100 p-4">
+        <img src="img/IMG-PRODUC-33.png" class="mb-3 no-hover" alt="Servicio">
+        <h5 class="h5-custom">Pinceles y esponjas</h5>
+      </div>
+    </div>
+    <!-- ... repetir estructura para más servicios ... -->
+  </div>
+    <div class="row justify-content-center">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card cardColorP no-hover h-100 p-4">
+        <img src="img/IMG-PRODUC-31.png" class="mb-3 no-hover" alt="Servicio">
+        <h5 class="h5-custom">Lápices y marcadores<br> de colores</h5>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card cardColorP no-hover h-100 p-4">
+        <img src="img/IMG-PRODUC-32.png" class="mb-3 no-hover" alt="Servicio">
+        <h5 class="h5-custom">Hojas blancas, de colores y plantillas para hacer títeres</h5>
+      </div>
+    </div>
+    <!-- ... repetir estructura para más servicios ... -->
+  </div>
+  </div>
+</section>
+<!-- /SERVICES -->
+  
+  <!-- TEATRO -->
+  <section class="section-spacing bgTeatro d-flex align-items-center justify-content-between">
+  <div class="container">
+  <div class="row align-items-center">
+     <!-- Imagen destacada -->
+    <div class="col-lg-7 text-center">
+      <img src="img/IMG-TEATRO.png" class="img-fluid img-rounded no-hover" alt="Imagen DESC">
+    </div>
+    <!-- Texto principal -->
+    <div class="col-lg-5 p-4">
+      <h1 class="h2-custom-white">Divertite armando el PequeTeatro</h1>
+      <p class="pBajadaW">Seguí la guía para padres y los videos de acopañamiento para armar el PequeTeatro y los títeres junto a tus hijos</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+  
+    <section class="section-spacing bgSwap">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="rounded-container-swap">
+          <div class="row align-items-center">
+            <!-- Columna de texto -->
+            <div class="col-lg-7">
+              <h2 class="display-5 h2-custom-white">Accedé al PequeSwap</h2>
+              <p class="pBajadaW">¿Completaste las actividades?<br>
+Disfruta de descuentos en librerías y jugeterías<br> con PequeSwap para seguir jugando en familia.</p>
+            <div class="d-flex gap-3 mt-4">
+        <a href="contacto" class="btn btn-dark btnTypo">SABER MÁS</a>
+      </div>
+            </div>
+             <!-- Columna de imagen -->
+            <div class="col-lg-5 text-center mb-4 mb-lg-0">
+              <img src="img/IMG-SWAP.png" class="img-fluid img-rounded no-hover" alt="Imagen ilustrativa">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+    <!-- TESTI -->
+<section id="opiniones" class="section-spacing bgTestimoniosDet text-center">
+  <div class="container">
+  <h2 class="h2-custom">¿Seguís con dudas? Mirá que opinan<br> quienes ya nos eligen</h2>
+ <div class="row mt-5">
+  <div class="col-12 col-md-4 mb-4">
+    <div class="card cardColor p-4 h-100">
+      <h4 class="h5-customW">Laura,<BR>
+mamá de Valen (5)</h4>
+      <ul class="list-unstyled pBajadaW">
+        <li>“Mi hija hizo tres títeres seguidos. Ahora tenemos un mini teatro en casa.”</li>
+      </ul>
+      <a href="#" class="btn btn-dark mt-2 btnTypo">RESEÑA COMPLETA</a>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-4 mb-4">
+    <div class="card cardColor p-4 h-100">
+      <h4 class="h5-customW">Carlos,<br>
+papá de Nico (7)</h4>
+      <ul class="list-unstyled pBajadaW">
+        <li>“Me gustó la variedad: dibujó, pintó y hasta armó un collage con los materiales.”</li>
+      </ul>
+      <a href="#" class="btn btn-dark mt-2 btnTypo">RESEÑA COMPLETA</a>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-4 mb-4">
+    <div class="card cardColor p-4 h-100">
+      <h4 class="h5-customW">María,<br>
+mamá de Leo (4)</h4>
+      <ul class="list-unstyled pBajadaW">
+        <li>“Increíble como se entretuvo. ¡Hicimos un collage gigante para la pared!”</li>
+      </ul>
+      <a href="#" class="btn btn-dark mt-2 btnTypo">RESEÑA COMPLETA</a>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- /TESTI -->
+  
+    <section class="section-spacing text-center seccion-suscribite-art">
+  <div class="container">
+    <h2 class="h2-custom-white">SUSCRIBITE A PEQUEARTISTICOS Y DEJÁ QUE EL LIVING SEA  SU NUEVO TALLER
+</h2>
+    <div class="mt-1 d-flex justify-content-center gap0">
+    <a href="#" class="btn btn-primary btnCardColor btnTypo">QUIERO ESTE KIT</a>
+  </div>
+  </div>
+</section>
+  
+  <!-- GALERÍA A: Grid clásico de 3 columnas -->
+<section class="section-spacing bgMarcas py-1 text-center">
+  <div class= container>
+    <h2 class="mb-4 h2-custom">Pagá como quieras</h2>
+  <div class="row g-">
+    <div class="col-md-2"><img src="img/pago%201.png" class="img-fluid img-rounded rounded no-hover" alt="Imagen 1"></div>
+    <div class="col-md-2"><img src="img/pago%202.png" class="img-fluid img-rounded rounded no-hover" alt="Imagen 2"></div>
+    <div class="col-md-2"><img src="img/pago%203.png" class="img-fluid img-rounded rounded no-hover" alt="Imagen 3"></div>
+    <div class="col-md-2"><img src="img/pago%204.png" class="img-fluid img-rounded rounded no-hover" alt="Imagen 4"></div>
+    <div class="col-md-2"><img src="img/pago%205.png" class="img-fluid img-rounded rounded no-hover" alt="Imagen 5"></div>
+  </div>
+  </div>
+  
+</section>
+
+
+  <!-- CONTACT FORM: Formulario de contacto -->
+<section id="contacto" class="section-spacing bgContacto text-center">
+  <div class="container">
+    <h2 class="h2-custom">¿Tenés consultas? No dudes en escribinos</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <!-- contenedor con sombra -->
+          <div class="form-container p-4">
+            <div class="mb-3 text-start">
+              <label for="nombre" class="form-label pLecturaCard">Tu nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3 text-start">
+              <label for="email" class="form-label pLecturaCard">Tu email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3 text-start">
+              <label for="consulta" class="form-label pLecturaCard">¿Cuál es tu consulta?</label>
+              <textarea class="form-control" id="consulta" rows="4"></textarea>
+            </div>
+          </div>
+          <!-- botón afuera -->
+          <button type="submit" class="btn btn-dark btnTypo w-100 mt-3">ENVIAR</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /CONTACT FORM -->
+
+<footer class="footer-custom text-white py-5 mt-61">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-2 mb-4">
+        <h5 class="footer-custom-h5">Soporte</h5>
+        <p class="mb-0">Políticas de privacidad<br>
+Términos de servicio<br>
+Contacto<br>
+FAQ</p>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h5 class="footer-custom-h5">Compra</h5>
+        <p class="mb-0">Kits<br>Medios de pago<br>Método de envío<br>Seguir mi pedido</p>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h5 class="footer-custom-h5">Comunidad</h5>
+        <p class="mb-0">Sobre nosotros<br>Opiniones<br>Suscribirse<br>Nuestras redes</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>

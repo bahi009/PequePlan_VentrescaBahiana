@@ -24,31 +24,34 @@ body {
 
 /* 3. NAVBAR */
 .navbar {
-  background-color: transparent;
+  background-color: #FF5111;
   transition: background-color 0.3s, box-shadow 0.3s;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .navbar.scrolled {
-  background-color: #fff;
+  background-color: #FF5111;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-brand {
   font-weight: 600;
   font-size: 1.7rem;
-  color: var(--dark-color);
+  color: white;
 }
 
 .nav-link {
-  color: var(--dark-color);
-  font-weight: 500;
+  font-family: 'Jost', sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
   margin-left: 20px;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  color: white;
+  opacity: 50;
 }
 
 /* 4. HERO */
@@ -65,7 +68,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3re;
   margin-bottom: 20px;
   color: var(--dark-color);
 }
@@ -80,6 +83,15 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  color: #fff;                     
+}
+
+.bgHeroDet {
+  background: url(img/FONDOS-DET-22.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;                     
 }
 
 
@@ -90,12 +102,16 @@ p {
   font-weight: 481;
   font-size: 15px;
   transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  min-height: 5;
+  min-width: 5;
 }
 
 .btn-dark {
   background-color: #F2B008;
   border: none;
-  font-size: 15px
+  font-size: 15px;
+  box-shadow: 4px;
 }
 
 .btnTypo {
@@ -133,7 +149,7 @@ section {
 
 section h2 {
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 3px;
   position: relative;
 }
 
@@ -142,14 +158,13 @@ section h2::after {
   display: block;
   width: 60px;
   height: 3px;
-  background: var(--primary-color);
-  margin: 20px auto 0;
+  margin: 10px auto 0;
 }
 
 /* 6. CARDS */
 .card {
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
   overflow: hidden;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
@@ -158,6 +173,11 @@ section h2::after {
 .cardColor{
   background-color: #FF5111;
 }
+
+.cardColorP{
+  background-color: transparent;
+}
+
 
 .card:hover {
   transform: translateY(-5px);
@@ -182,7 +202,7 @@ section h2::after {
 }
 
 .card-text {
-  color: #ffffff;
+  color: transparent;
 }
 
 /* 7. TESTIMONIOS */
@@ -205,13 +225,46 @@ form button.btn-primary {
   width: 100%;
   border-radius: 50px;
   margin-top: 20px;
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.40);
+  min-height: 48;
+  min-width: 5;
 }
 
 /* 9. FOOTER */
 footer {
-  background-color: var(--dark-color);
-  color: #ffffff;
+  background-color:FF5111;
+  color: #FF5111;
   font-size: 0.9rem;
+}
+
+/* FOOTER NUEVO */
+.footer-custom {
+  background-color: #FF5111; /* color de fondo sólido */
+}
+
+.footer-custom h5 {
+font-size: 25px;
+font-weight: 300;
+color: white;
+}
+
+.footer-custom p {
+ font-family: 'Jost', sans-serif;
+font-weight: 250;
+font-size: 15px;
+  color:white;
+  line-height: 2;
+}
+
+.footer-custom a {
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  color:white;
+  line-height: 1.6;
+}
+
+.footer-custom a:hover {
+  text-decoration: underline;
 }
 
 /* 10. IMÁGENES */
@@ -228,6 +281,7 @@ img.rounded-circle {
   transform: scale(1.05);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .no-hover,
 .no-hover:hover {
@@ -246,23 +300,30 @@ img.rounded-circle {
 
 /* TITULOS */
 .h1-custom {
-  font-size: 3rem;
+  font-size:57px;
+  font-weight: 434;
+  line-height: 1.2;
+  color: #FF5111;
+}
+
+.h1-custom-det {
+  font-size:57px;
   font-weight: 434;
   line-height: 1.2;
   color: #FF5111;
 }
 
 .h2-custom {
-  font-size: 2.5rem;
+  font-size: 65;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1;
   color: #FF5111;
 }
 
 .h2-custom-white {
-  font-size: 2.5rem;
+  font-size: 70px;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1;
   color: white;
 }
 
@@ -274,15 +335,28 @@ img.rounded-circle {
 }
 
 .h4-custom {
-  font-size: 2rem;
+  font-size:55px;
   font-weight: 300;
+  color: white;
+}
+
+.h5-custom {
+  font-size: 25px;
+  font-weight: 350;
+  color: black;
+}
+
+.h5-customW {
+  font-size: 35px;
+  font-weight: 400;
   color: white;
 }
 
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
-  font-size: 1rem;
-  color: var(--secondary-color);
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  color:black;
   line-height: 1.6;
 }
 
@@ -299,15 +373,22 @@ img.rounded-circle {
   text-align-last: center;
 }
 
+
 .pLecturaPlan {
   font-family: "Jost", sans-serif;
   color: white;
   font-size: 1rem;
 }
 
-.pText {
+.pBajadaW {
   font-family: "Jost", sans-serif;
   color: white;
+  font-size: 20px;
+}
+
+.pBajadaB {
+  font-family: "Jost", sans-serif;
+  color: black;
   font-size: 20px;
 }
 
@@ -336,10 +417,21 @@ img.rounded-circle {
 }
 
 .bgPequePlan {
-  background: url(img/fondos-05.jpg);
+  background: url(img/fondos-04.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  min-height: 630px;
+  display: flex
+}
+
+.bgSwap {
+  background: url(img/FONDO-DET-26.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 630px;
+  display: flex
 }
 
 .bgCards {
@@ -354,6 +446,17 @@ img.rounded-circle {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 1080px;
+  display: flex
+}
+
+.bgTeatro {
+  background: url(img/FONDO-DET-25.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1080px;
+  display: flex
 }
 
 .bgMarcas {
@@ -368,6 +471,17 @@ img.rounded-circle {
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
+  min-height: 613px;
+  display: flex
+}
+
+.bgTestimoniosDet {
+  background: url(img/FONDO-DET-27.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 613px;
+  display: flex
 }
 
 .bgSuscribirse {
@@ -375,6 +489,8 @@ img.rounded-circle {
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
+  min-height: 613px;
+  display: flex;
   
 }
 
@@ -383,7 +499,18 @@ img.rounded-circle {
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
+  min-height: 918px;
+  display: flex;
   
+}
+
+.bgProd {
+   background: url(img/FONDO-DET-24.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 1260px;
+  display: flex;
 }
 
 .img-rounded {
@@ -396,6 +523,49 @@ img.rounded-circle {
   background-size: cover;         
   background-position: center;     
   background-repeat: no-repeat;
+  min-height: 613px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;                     
+  padding: 60px 0;                
+}
+
+.seccion-frase {
+  background-image: url(img/FONDO-DET-23.jpg); 
+  background-size: cover;         
+  background-position: center;     
+  background-repeat: no-repeat;
+  min-height: 613px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;                     
+  padding: 60px 0;                
+}
+
+.seccion-que-esperas {
+  background-image: url(img/fondos-10.jpg); 
+  background-size: cover;         
+  background-position: center;     
+  background-repeat: no-repeat;
+  min-height: 613px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;                     
+  padding: 60px 0;                
+}
+
+.seccion-suscribite-art {
+  background-image: url(img/FONDO-DET-28.jpg); 
+  background-size: cover;         
+  background-position: center;     
+  background-repeat: no-repeat;
+  min-height: 613px;
+  display: flex;
+  align-items: center;
+  text-align: center;
   color: #fff;                     
   padding: 60px 0;                
 }
@@ -403,10 +573,11 @@ img.rounded-circle {
 /* SECCION ICONOS*/
 .section-beneficios {
   position: relative;
-  background-image: url(img/fondos-04.jpg);
+  background-image: url(img/fondos-03.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 613px;
   color: #fff;               
   padding: 60px 0;
 }
@@ -432,9 +603,28 @@ img.rounded-circle {
 
 .rounded-container {
   background-color: #FF94CC;
-  border-radius: 1rem;
-  box-shadow: 0 0 26px rgba(0, 0, 0, 0.39);
-  mix-blend-mode: multiply;
+  border-radius: 25px;
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.39);
+  min-height: 5;
+  min-width: 5;
+  padding-left: 70px;
+}
+
+.rounded-container-swap {
+  background-color: #1EC285;
+  border-radius: 25px;
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.39);
+  min-height: 5;
+  min-width: 5;
+  padding-left: 70px;
+}
+
+.form-container {
+  background-color: #1EC285;      /* fondo blanco */
+  border-radius:25px;         /* puntas redondeadas */
+  box-shadow: 0 0 17px rgba(0,0,0,0.39);
+  min-height: 5;
+  min-width: 5;/* sombra suave */
 }
 
 /* TEXTOS ADICIONALES */
@@ -469,7 +659,7 @@ img.rounded-circle {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .navbar-brand {
     font-size: 1.5rem;
@@ -491,5 +681,79 @@ img.rounded-circle {
 @media screen and (max-width: 576px) {
   .masonry__container {
     column-count: 1;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section-spacing {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .h1-custom {
+    font-size: 2rem;
+  }
+
+  .h2-custom,
+  .h2-custom-white {
+    font-size: 1.75rem;
+  }
+
+  .h4-custom {
+    font-size: 1.25rem;
+  }
+
+  .h5-custom,
+  .h5-customW {
+    font-size: 1rem;
+  }
+
+  .pBajadaW,
+  .pBajadaB {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+    min-width: auto;
+    min-height: auto;
+  }
+
+  .rounded-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .rounded-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rounded-container-swap {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bgMarcas {
+    background: url('img/fondos-05.jpg') center/cover no-repeat;
   }
 }
